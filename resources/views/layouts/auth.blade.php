@@ -9,7 +9,6 @@
     
 </head>
 <body>
-<h1>Login Page</h1>
     @yield('content')
 </body>
 </html>
