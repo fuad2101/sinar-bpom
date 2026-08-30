@@ -24,8 +24,8 @@
       <div class="h-19">
         <i class="absolute top-0 right-0 p-4 opacity-50 cursor-pointer fas fa-times dark:text-white text-slate-400 xl:hidden" sidenav-close></i>
         <a class="block px-8 py-6 m-0 text-sm whitespace-nowrap dark:text-white text-slate-700" href="https://demos.creative-tim.com/argon-dashboard-tailwind/pages/dashboard.html" target="_blank">
-          <img src="./assets/img/logo-ct-dark.png" class="inline h-full max-w-full transition-all duration-200 dark:hidden ease-nav-brand max-h-8" alt="main_logo" />
-          <img src="./assets/img/logo-ct.png" class="hidden h-full max-w-full transition-all duration-200 dark:inline ease-nav-brand max-h-8" alt="main_logo" />
+          <img src="{{asset('img/logo-ct-dark.png')}}" class="inline h-full max-w-full transition-all duration-200 dark:hidden ease-nav-brand max-h-8" alt="main_logo" />
+          <img src="{{asset('img/logo-ct.png')}}" class="hidden h-full max-w-full transition-all duration-200 dark:inline ease-nav-brand max-h-8" alt="main_logo" />
           <span class="ml-1 font-semibold transition-all duration-200 ease-nav-brand">Argon Dashboard 2</span>
         </a>
       </div>
@@ -98,7 +98,7 @@
                 <i class="relative top-0 text-sm leading-normal text-orange-500 ni ni-single-copy-04"></i>
               </div>
               <form action="{{route('logout')}}" method="post">
-                <button type="submit"><span class="ml-1 duration-300 opacity-100 pointer-events-none ease">Logout</span></button> 
+                <button type="submit"><span class="ml-1 duration-300 opacity-100 pointer-events-none ease">Logout</span></button>
               </form>
             </a>
           </li>
@@ -118,7 +118,7 @@
         <!-- load phantom colors for card after: -->
         <p class="invisible hidden text-gray-800 text-red-500 text-red-600 text-blue-500 bg-gray-500/30 bg-cyan-500/30 bg-emerald-500/30 bg-orange-500/30 bg-red-500/30 after:bg-gradient-to-tl after:from-zinc-800 after:to-zinc-700 dark:bg-gradient-to-tl dark:from-slate-750 dark:to-gray-850 after:from-blue-700 after:to-cyan-500 after:from-orange-500 after:to-yellow-500 after:from-green-600 after:to-lime-400 after:from-red-600 after:to-orange-600 after:from-slate-600 after:to-slate-300 text-emerald-500 text-cyan-500 text-slate-400"></p>
         <div class="relative flex flex-col min-w-0 break-words bg-transparent border-0 shadow-none rounded-2xl bg-clip-border" sidenav-card>
-          <img class="w-1/2 mx-auto" src="./assets/img/illustrations/icon-documentation.svg" alt="sidebar illustrations" />
+          <img class="w-1/2 mx-auto" src="{{asset('img/illustrations/icon-documentation.svg')}}" alt="sidebar illustrations" />
           <div class="flex-auto w-full p-4 pt-0 text-center">
             <div class="transition-all duration-200 ease-nav-brand">
               <h6 class="mb-0 dark:text-white text-slate-700">Need help?</h6>
@@ -394,7 +394,7 @@
             <div slider class="relative w-full h-full overflow-hidden rounded-2xl">
               <!-- slide 1 -->
               <div slide class="absolute w-full h-full transition-all duration-500">
-                <img class="object-cover h-full" src="./assets/img/carousel-1.jpg" alt="carousel image" />
+                <img class="object-cover h-full" src="{{asset('img/carousel-1.jpg')}}" alt="carousel image" />
                 <div class="block text-start ml-12 left-0 bottom-0 absolute right-[15%] pt-5 pb-5 text-white">
                   <div class="inline-block w-8 h-8 mb-4 text-center text-black bg-white bg-center rounded-lg fill-current stroke-none">
                     <i class="top-0.75 text-xxs relative text-slate-700 ni ni-camera-compact"></i>
@@ -406,7 +406,7 @@
 
               <!-- slide 2 -->
               <div slide class="absolute w-full h-full transition-all duration-500">
-                <img class="object-cover h-full" src="./assets/img/carousel-2.jpg" alt="carousel image" />
+                <img class="object-cover h-full" src="{{asset('img/carousel-2.jpg')}}" alt="carousel image" />
                 <div class="block text-start ml-12 left-0 bottom-0 absolute right-[15%] pt-5 pb-5 text-white">
                   <div class="inline-block w-8 h-8 mb-4 text-center text-black bg-white bg-center rounded-lg fill-current stroke-none">
                     <i class="top-0.75 text-xxs relative text-slate-700 ni ni-bulb-61"></i>
@@ -418,7 +418,7 @@
 
               <!-- slide 3 -->
               <div slide class="absolute w-full h-full transition-all duration-500">
-                <img class="object-cover h-full" src="./assets/img/carousel-3.jpg" alt="carousel image" />
+                <img class="object-cover h-full" src="{{asset('img/carousel-3.jpg')}}" alt="carousel image" />
                 <div class="block text-start ml-12 left-0 bottom-0 absolute right-[15%] pt-5 pb-5 text-white">
                   <div class="inline-block w-8 h-8 mb-4 text-center text-black bg-white bg-center rounded-lg fill-current stroke-none">
                     <i class="top-0.75 text-xxs relative text-slate-700 ni ni-trophy"></i>
@@ -751,6 +751,5 @@
         </div>
       </div>
     </div>
-  
+
 @endsection
-  
