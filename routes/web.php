@@ -12,9 +12,22 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/dashboard', function(){
-    return view('pages.dashboard.index');
-})->middleware(['verified'])->name('dashboard');
+// Route::get('/dashboard', function(){
+//     return view('pages.dashboard.index');
+// })->middleware(['verified'])->name('dashboard');
+
+Route::middleware(['verified'])->group(function(){
+
+    Route::get('/dashboard', function(){
+        return view('pages.dashboard.index');
+    })->name('dashboard');
+
+    Route::get('/table', function(){
+        return view('pages.dashboard.tables');
+    })->name('table');
+
+
+});
 
 Route::get('/email/verify', function () {
     return view('pages.auth.verify-email');
