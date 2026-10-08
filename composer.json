@@ -10,10 +10,13 @@
     "license": "MIT",
     "require": {
         "php": "^8.3",
+        "blade-ui-kit/blade-heroicons": "*",
+        "blade-ui-kit/blade-icons": "*",
         "laravel/fortify": "^1.39",
         "laravel/framework": "^13.17",
         "laravel/tinker": "^3.0",
-        "livewire/livewire": "^4.4"
+        "livewire/livewire": "*",
+        "pushery/wirekit": "*"
     },
     "require-dev": {
         "fakerphp/faker": "^1.23",

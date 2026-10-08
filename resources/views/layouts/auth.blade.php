@@ -7,8 +7,10 @@
     <title> @yield('title') </title>
     @vite('resources/css/app.css')
     
+    @wirekitStyles
 </head>
 <body>
     @yield('content')
+    @wirekitScripts
 </body>
 </html>

@@ -6,8 +6,12 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>{{$title ?? 'SINAR | Sistem Informasi Anggaran' }}</title>
     @vite('resources/css/app.css')
+    @wirekitStyles
+    @livewireStyles
 </head>
 <body>
-{{ $slot }}
+@yield('content')
+@wirekitScripts
+@livewireScripts
 </body>
 </html>
